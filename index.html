@@ -74,17 +74,20 @@
       </div>
     </header>
     <main>
-      <section id="music">
+      <section class="music" id="music">
         <div class="wrapper">
-          <iframe
-            id="tunecube"
-            src="//tuneport.com/w/cube.html?p=BongoBandanna"
-            style="width: 100%; height: 590px; border: 0"
-            title="Buy music"
-          ></iframe>
+          <h3>Buy your favourite tracks</h3>
+          <div class="frame">
+            <iframe
+              id="tunecube"
+              src="//tuneport.com/w/cube.html?p=BongoBandanna"
+              style="height: 590px; border: 0"
+              title="Buy music"
+            ></iframe>
+          </div>
         </div>
       </section>
-      <section class="imgGallery">
+      <section class="imgGallery flexContainer">
         <div class="imgContainer">
           <img
             src="./assets/bottle.jpeg"
@@ -110,7 +113,7 @@
     </main>
     <footer id="contact">
       <div class="wrapper">
-        <h2>Bongo</h2>
+        <h2 class="logo">Bongo</h2>
         <nav>
           <ul class="iconsList flexContainer">
             <li>
@@ -133,8 +136,8 @@
             </li>
           </ul>
         </nav>
-        <div class="contact">
-          <a href="mailto:bigbongobaby@icloud.com">Message</a>
+        <div class="email">
+          <a href="mailto:bigbongobaby@icloud.com" class="btn">Message</a>
         </div>
       </div>
     </footer>
