@@ -1,11 +1,29 @@
-.wrapper {
-  max-width: 1200px;
-  width: 85%;
+.largeWrapper {
+  max-width: 1400px;
+  width: 95%;
   margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 img {
   max-width: 100%;
   display: block;
   height: auto;
+  object-fit: contain;
+}
+
+.btn {
+  border: 2px solid $accent;
+  padding: 15px;
 }
