@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
     <!-- link to fontawesome -->
@@ -23,46 +23,54 @@
   <body>
     <header>
       <nav>
-        <div class="largeWrapper">
-          <ul class="navList">
-            <li><a href="music">Music</a></li>
-            <li><a href="contact">Contact</a></li>
+        <div class="largeWrapper flexContainer">
+          <ul class="navList flexContainer">
+            <li><a href="#music">Music</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-          <ul class="navIcons">
-            <div class="iconContainer">
+          <!-- <div class="logo">
+            <p>Bongo</p>
+          </div> -->
+          <ul class="iconsList flexContainer">
+            <li>
               <a href="#" target="_blank" rel="noopener">
                 <span class="sr-only">Link to Soundcloud</span>
                 <i class="fa-brands fa-soundcloud" aria-hidden="true"></i>
               </a>
-            </div>
-            <div class="logo">
-              <p>Bongo</p>
-            </div>
-            <div class="iconContainer">
+            </li>
+            <li>
               <a href="#" target="_blank" rel="noopener">
                 <span class="sr-only">Link to Instagram</span>
                 <i class="fa-brands fa-instagram" aria-hidden="true"></i>
               </a>
-            </div>
-            <div class="iconContainer">
+            </li>
+            <li>
               <a href="#" target="_blank" rel="noopener">
                 <span class="sr-only">Link to Youtube</span>
                 <i class="fa-brands fa-youtube" aria-hidden="true"></i>
               </a>
-            </div>
+            </li>
           </ul>
         </div>
       </nav>
-      <div class="wrapper">
+      <div class="wrapper flexContainer">
         <div class="title">
           <h1>Bongo</h1>
           <h2>Rapper & Big baby</h2>
           <p>Hip Hop / Rap / Jazz / Basketball</p>
         </div>
-        <div class="buyMusic">
-          <a href="music">Buy my music</a>
-          <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+        <div class="headerImgContainer">
+          <img
+            src="./assets/bongo450.png"
+            alt="Photo of Bongo looking at his watch"
+          />
         </div>
+      </div>
+      <div class="buyMusic">
+        <a href="#music" class="btn">Buy my music </a>
+        <a href="#music" class="arrowDown">
+          <i class="fa-solid fa-angle-down" aria-hidden="true"></i
+        ></a>
       </div>
     </header>
     <main>
@@ -100,29 +108,29 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="contact">
       <div class="wrapper">
         <h2>Bongo</h2>
         <nav>
-          <ul class="navIcons">
-            <div class="iconContainer">
+          <ul class="iconsList flexContainer">
+            <li>
               <a href="#" target="_blank" rel="noopener">
                 <span class="sr-only">Link to Soundcloud</span>
                 <i class="fa-brands fa-soundcloud" aria-hidden="true"></i>
               </a>
-            </div>
-            <div class="iconContainer">
+            </li>
+            <li>
               <a href="#" target="_blank" rel="noopener">
                 <span class="sr-only">Link to Instagram</span>
                 <i class="fa-brands fa-instagram" aria-hidden="true"></i>
               </a>
-            </div>
-            <div class="iconContainer">
+            </li>
+            <li>
               <a href="#" target="_blank" rel="noopener">
                 <span class="sr-only">Link to Youtube</span>
                 <i class="fa-brands fa-youtube" aria-hidden="true"></i>
               </a>
-            </div>
+            </li>
           </ul>
         </nav>
         <div class="contact">
