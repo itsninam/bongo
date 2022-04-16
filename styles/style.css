@@ -286,8 +286,6 @@ h1,
   font-family: "Shrikhand", cursive;
   text-transform: uppercase;
   color: #fff;
-  -webkit-transform: rotate(-1deg);
-          transform: rotate(-1deg);
 }
 
 .logo {
@@ -427,7 +425,12 @@ nav .iconsList li {
   position: relative;
 }
 .title h1 {
-  margin: 80px 0 30px 0;
+  margin: 80px 0;
+}
+.title h1 span {
+  display: block;
+  font-size: 3rem;
+  line-height: 25px;
 }
 .title p {
   text-transform: uppercase;
@@ -492,6 +495,10 @@ nav .iconsList li {
     font-size: 6rem;
   }
 
+  h2 {
+    font-size: 2rem;
+  }
+
   .headerImgContainer {
     right: 0;
   }
@@ -552,6 +559,18 @@ nav .iconsList li {
   .imgGallery .imgContainer {
     height: 100%;
   }
+  .imgGallery .hidden {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .imgGallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 1300px;
+  }
 }
 footer {
   background-image: url("../../../assets/mic.avif");
@@ -578,6 +597,13 @@ footer nav .iconsList {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+footer .btn {
+  background-color: #e76f51;
+}
+footer .btn:hover, footer .btn:focus {
+  background-color: transparent;
+  color: #fff;
 }
 
 @media (max-width: 750px) {
