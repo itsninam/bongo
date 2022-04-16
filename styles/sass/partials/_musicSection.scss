@@ -5,7 +5,37 @@
     text-align: center;
 
     iframe {
-      width: 50%;
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .music {
+    .frame {
+      iframe {
+        width: 430px;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .music {
+    .frame {
+      iframe {
+        width: 365px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .music {
+    .frame {
+      iframe {
+        width: 330px;
+      }
     }
   }
 }
