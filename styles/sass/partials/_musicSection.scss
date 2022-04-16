@@ -1,41 +1,19 @@
 .music {
   background-image: url("../../../assets/texture.jpeg");
 
-  .frame {
-    text-align: center;
+  iframe {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 590px;
+    border: 0;
+  }
+}
 
+@media (max-width: 760px) {
+  .music {
     iframe {
-      width: 600px;
-    }
-  }
-}
-
-@media (max-width: 690px) {
-  .music {
-    .frame {
-      iframe {
-        width: 450px;
-      }
-    }
-  }
-}
-
-@media (max-width: 430px) {
-  .music {
-    .frame {
-      iframe {
-        width: 365px;
-      }
-    }
-  }
-}
-
-@media (max-width: 375px) {
-  .music {
-    .frame {
-      iframe {
-        width: 330px;
-      }
+      width: 93%;
     }
   }
 }
