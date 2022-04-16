@@ -21,6 +21,16 @@ footer {
       justify-content: center;
     }
   }
+
+  .btn {
+    background-color: $accent;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: #fff;
+    }
+  }
 }
 
 @media (max-width: 750px) {
