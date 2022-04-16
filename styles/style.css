@@ -379,8 +379,9 @@ footer {
 }
 
 header {
-  background-color: rgb(8, 12, 36);
+  background-color: rgb(3, 5, 14);
   height: 90vh;
+  height: auto;
   position: relative;
 }
 
@@ -497,7 +498,7 @@ nav .iconsList li {
 }
 @media (max-width: 430px) {
   nav .iconsList a {
-    padding: 4px;
+    padding: 6.5px;
   }
 
   h1 {
@@ -526,26 +527,17 @@ nav .iconsList li {
 .music {
   background-image: url("../../../assets/texture.jpeg");
 }
-.music .frame {
-  text-align: center;
-}
-.music .frame iframe {
-  width: 600px;
+.music iframe {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 590px;
+  border: 0;
 }
 
-@media (max-width: 690px) {
-  .music .frame iframe {
-    width: 450px;
-  }
-}
-@media (max-width: 430px) {
-  .music .frame iframe {
-    width: 365px;
-  }
-}
-@media (max-width: 375px) {
-  .music .frame iframe {
-    width: 330px;
+@media (max-width: 760px) {
+  .music iframe {
+    width: 93%;
   }
 }
 .imgGallery {
