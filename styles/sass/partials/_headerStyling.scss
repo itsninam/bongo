@@ -1,7 +1,7 @@
 header {
   background-color: rgb(3, 5, 14);
-  height: 90vh;
-  height: auto;
+  height: 100vh;
+  // height: auto;
   position: relative;
 }
 
@@ -42,13 +42,13 @@ nav {
 }
 
 .title {
-  margin-top: 100px;
+  margin-top: 180px;
   color: $secondary;
   z-index: 10;
   position: relative;
 
   h1 {
-    margin: 80px 0;
+    margin: 90px 0;
 
     span {
       display: block;
@@ -135,9 +135,30 @@ nav {
 }
 
 @media (max-width: 320px) {
+  nav {
+    .iconsList {
+      li {
+        margin: 10px;
+      }
+      a {
+        font-size: 0.3rem;
+        padding: 0;
+
+        i {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
   .title {
     h1 {
       margin-top: -60px;
+      font-size: 2.8rem;
+
+      span {
+        font-size: 2.8rem;
+      }
     }
   }
 
