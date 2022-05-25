@@ -1,7 +1,6 @@
 header {
   background-color: rgb(3, 5, 14);
-  height: 100vh;
-  // height: auto;
+  height: auto;
   position: relative;
 }
 
@@ -65,8 +64,21 @@ nav {
 .headerImgContainer {
   position: absolute;
   bottom: 0;
-  right: 100px;
+  right: 0;
   opacity: 0.4;
+
+  .headerImg {
+    transition: 0.5s;
+    height: 630px;
+    -webkit-mask-image: -webkit-gradient(
+      linear,
+      right top,
+      right bottom,
+      from(rgba(0, 0, 0, 1)),
+      to(rgba(0, 0, 0, 0))
+    );
+    mask-image: linear-gradient(to left, rgb(3, 5, 14), rgba(0, 0, 0, 0));
+  }
 }
 
 .buyMusic {
@@ -100,7 +112,7 @@ nav {
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   h2 {
@@ -108,7 +120,9 @@ nav {
   }
 
   .headerImgContainer {
-    right: 0;
+    .headerImg {
+      height: 550px;
+    }
   }
 }
 
