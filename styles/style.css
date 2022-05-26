@@ -439,7 +439,7 @@ nav .iconsList li {
   position: absolute;
   bottom: 0;
   right: 0;
-  opacity: 0.4;
+  opacity: 0.8;
 }
 .headerImgContainer .headerImg {
   -webkit-transition: 0.5s;
