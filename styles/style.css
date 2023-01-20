@@ -369,6 +369,7 @@ img {
 .btn {
   border: 2px solid #e76f51;
   padding: 15px;
+  cursor: pointer;
 }
 
 section,
@@ -408,13 +409,18 @@ nav .iconsList a i {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-nav .iconsList a i:hover, nav .iconsList a i:focus {
-  color: #fff;
-}
 nav .iconsList li {
   margin: 20px;
   border: 2px solid #e76f51;
   border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+nav .iconsList li:hover, nav .iconsList li:focus {
+  border: 2px solid #fff;
+}
+nav .iconsList li:hover i, nav .iconsList li:focus i {
+  color: #fff;
 }
 
 .title {
@@ -549,12 +555,21 @@ nav .iconsList li {
 .music {
   background-image: url("../../../assets/texture.jpeg");
 }
-.music iframe {
-  display: block;
-  margin: 0 auto;
-  width: 500px;
-  height: 590px;
-  border: 0;
+.music .iframeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 700px;
+}
+.music .iframeContainer iframe {
+  width: 595px;
+  height: 595px;
 }
 
 @media (max-width: 760px) {
@@ -588,7 +603,9 @@ nav .iconsList li {
   }
 }
 footer {
-  background-image: url("../../../assets/FOOT4.png");
+  background-image: url("../../../assets/FOOT4.png"), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
+  background-image: url("../../../assets/FOOT4.png"), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-blend-mode: overlay;
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -610,10 +627,37 @@ footer nav .iconsList {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #fff;
-  opacity: 0.7;
-  width: 250px;
-  margin: 0 auto;
+  z-index: 1000;
+}
+footer nav .iconsList a i {
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer nav .iconsList li {
+  margin: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer nav .iconsList li:hover, footer nav .iconsList li:focus {
+  border: 2px solid #e76f51;
+}
+footer nav .iconsList li:hover i, footer nav .iconsList li:focus i {
+  color: #e76f51;
 }
 footer .btn {
   background-color: #e76f51;

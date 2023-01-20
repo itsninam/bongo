@@ -1,12 +1,18 @@
 .music {
   background-image: url("../../../assets/texture.jpeg");
 
-  iframe {
-    display: block;
-    margin: 0 auto;
-    width: 500px;
-    height: 590px;
-    border: 0;
+  .iframeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+
+    iframe {
+      width: 595px;
+      height: 595px;
+
+    }
+
   }
 }
 

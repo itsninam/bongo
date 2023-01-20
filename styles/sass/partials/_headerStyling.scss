@@ -25,10 +25,6 @@ nav {
         color: $accent;
         transition: 0.3s;
 
-        &:hover,
-        &:focus {
-          color: #fff;
-        }
       }
     }
 
@@ -36,6 +32,17 @@ nav {
       margin: 20px;
       border: 2px solid $accent;
       border-radius: 50%;
+      transition: 0.3s;
+
+      &:hover,
+      &:focus {
+        border: 2px solid #fff;
+      }
+
+      &:hover i,
+      &:focus i {
+        color: #fff;
+      }
     }
   }
 }
@@ -70,13 +77,11 @@ nav {
   .headerImg {
     transition: 0.5s;
     height: 630px;
-    -webkit-mask-image: -webkit-gradient(
-      linear,
-      right top,
-      right bottom,
-      from(rgba(0, 0, 0, 1)),
-      to(rgba(0, 0, 0, 0))
-    );
+    -webkit-mask-image: -webkit-gradient(linear,
+        right top,
+        right bottom,
+        from(rgba(0, 0, 0, 1)),
+        to(rgba(0, 0, 0, 0)));
     mask-image: linear-gradient(to left, rgb(3, 5, 14), rgba(0, 0, 0, 0));
   }
 }
@@ -98,9 +103,11 @@ nav {
   100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-30px);
   }
+
   60% {
     transform: translateY(-15px);
   }
@@ -154,6 +161,7 @@ nav {
       li {
         margin: 10px;
       }
+
       a {
         font-size: 0.3rem;
         padding: 0;

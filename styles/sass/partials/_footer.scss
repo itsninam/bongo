@@ -1,5 +1,7 @@
 footer {
-  background-image: url("../../../assets/FOOT4.png");
+  background-image: url("../../../assets/FOOT4.png"), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-blend-mode: overlay;
+
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,10 +21,41 @@ footer {
     .iconsList {
       display: flex;
       justify-content: center;
-      background-color: #fff;
-      opacity: 0.7;
-      width: 250px;
-      margin: 0 auto;
+      z-index: 1000;
+
+
+      a {
+
+
+        i {
+          height: 50px;
+          width: 50px;
+          font-size: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          transition: 0.3s;
+
+        }
+      }
+
+      li {
+        margin: 20px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+          border: 2px solid $accent;
+        }
+
+        &:hover i,
+        &:focus i {
+          color: $accent;
+        }
+      }
     }
   }
 
