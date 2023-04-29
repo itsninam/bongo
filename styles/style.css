@@ -262,6 +262,7 @@ html {
 
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -370,11 +371,12 @@ img {
   border: 2px solid #e76f51;
   padding: 15px;
   cursor: pointer;
+  margin-left: 24px;
 }
 
 section,
 footer {
-  padding: 50px 0;
+  padding: 50px 0 70px 0;
 }
 
 header {
@@ -555,21 +557,26 @@ nav .iconsList li:hover i, nav .iconsList li:focus i {
 .music {
   background-image: url("../../../assets/texture.jpeg");
 }
-.music .iframeContainer {
+
+.iframeContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 700px;
 }
-.music .iframeContainer iframe {
+.iframeContainer #tunecube {
   width: 595px;
   height: 595px;
+}
+
+.video {
+  background-image: url("../../../assets/iu.jpg");
+  background-size: cover;
+}
+.video h3 {
+  color: #fff;
 }
 
 @media (max-width: 760px) {
@@ -612,6 +619,7 @@ footer {
   text-align: center;
   opacity: 0.9;
   padding: 10rem 0;
+  margin-top: 10px;
 }
 footer .logo {
   color: #fff;

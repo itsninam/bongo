@@ -1,18 +1,25 @@
 .music {
   background-image: url("../../../assets/texture.jpeg");
 
-  .iframeContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
+}
 
-    iframe {
-      width: 595px;
-      height: 595px;
+.iframeContainer {
+  display: flex;
+  justify-content: center;
 
-    }
+  #tunecube {
+    width: 595px;
+    height: 595px;
 
+  }
+}
+
+.video {
+  background-image: url("../../../assets/iu.jpg");
+  background-size: cover;
+
+  h3 {
+    color: #fff;
   }
 }
 
